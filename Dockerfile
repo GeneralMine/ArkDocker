@@ -4,8 +4,8 @@ MAINTAINER GeneralMine
 # Var for first config
 ENV SESSIONNAME="Ark Docker by GeneralMine" \
     SERVERMAP="TheCenter" \
-    SERVERPASSWORD=${{ secrets.SERVER_PASSWORD }} \
-    ADMINPASSWORD=${{ secrets.ADMIN_PASSWORD }} \
+    SERVERPASSWORD="" \
+    ADMINPASSWORD="admin" \
     MAX_PLAYERS=70 \
     UPDATEONSTART=1 \
     BACKUPONSTART=1 \
