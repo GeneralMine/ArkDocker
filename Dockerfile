@@ -1,11 +1,11 @@
 FROM centos:7
-MAINTAINER boerngenschmidt
+MAINTAINER GeneralMine
 
 # Var for first config
-ENV SESSIONNAME="Ark Docker" \
-    SERVERMAP="TheIsland" \
-    SERVERPASSWORD="" \
-    ADMINPASSWORD="adminpassword" \
+ENV SESSIONNAME="Ark Docker by GeneralMine" \
+    SERVERMAP="TheCenter" \
+    SERVERPASSWORD=${{ secrets.SERVER_PASSWORD }} \
+    ADMINPASSWORD=${{ secrets.ADMIN_PASSWORD }} \
     MAX_PLAYERS=70 \
     UPDATEONSTART=1 \
     BACKUPONSTART=1 \
